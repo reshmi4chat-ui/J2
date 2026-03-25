@@ -59,6 +59,10 @@
     <h2 id="result">Result: </h2>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js"></<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
 </body>
 </html>
